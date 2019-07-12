@@ -1,0 +1,16 @@
+{
+    "name": "3ws-internet-oplossingen/pdf-tools",
+    "description": "PDF tool for showing information and PDF actions like separation.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "3WS Internet Oplossingen",
+            "email": "info@3ws.nl"
+        },
+        {
+            "name": "Peter Steenbergen",
+            "email": "psteenbergen@gmail.com"
+        }
+    ],
+    "require": {}
+}
