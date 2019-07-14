@@ -11,10 +11,9 @@ class Separate
     {
         $this->file = $file;
         $this->pattern = $pattern;
-        $this->separate();
     }
 
-    private function separate()
+    public function separate()
     {
         $cmd = escapeshellarg('pdfseparate');
         $file = escapeshellarg($this->file);

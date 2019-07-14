@@ -23,6 +23,7 @@ class Info
     public $pages;
     public $encrypted;
     public $pageSize;
+    public $pageRot;
     public $fileSize;
     public $optimized;
     public $PDFVersion;
@@ -93,5 +94,26 @@ class Info
         }
 
         return $result;
+    }
+
+    public function toArray()
+    {
+        return [
+            'title' => $this->title,
+            'author' => $this->author,
+            'creator' => $this->creator,
+            'producer' => $this->producer,
+            'creationDate' => $this->creationDate,
+            'modDate' => $this->modDate,
+            'tagged' => $this->tagged,
+            'form' => $this->form,
+            'pages' => $this->pages,
+            'encrypted' => $this->encrypted,
+            'pageSize' => $this->pageSize,
+            'fileSize' => $this->fileSize,
+            'optimized' => $this->optimized,
+            'PDFVersion' => $this->PDFVersion,
+            'pageRot' => $this->pageRot,
+        ];
     }
 }

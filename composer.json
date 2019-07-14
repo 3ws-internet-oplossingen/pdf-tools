@@ -12,5 +12,10 @@
             "email": "psteenbergen@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ThreeWS\\PdfTools\\": "src/"
+        }
+    }
 }
