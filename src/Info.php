@@ -42,7 +42,7 @@ class Info
         exec("$cmd $file", $output, $returnVar);
         switch ($returnVar) {
             case 1:
-                throw new OpenPDFException();
+                throw new OpenPDFException("Error opening PDF file: {$file}.");
                 break;
             case 2:
                 throw new OpenOutputException();
