@@ -14,14 +14,33 @@ OSX
 brew install poppler
 ```
 
-## Info
+## Installation
+
+```bash
+composer require 3ws-internet-oplossingen/pdf-tools
+```
+
+## Usage of the package
+
+### Info
 
 Gather all information about a PDF file like Page count.
 
-## Separate
+
+```php
+$pdf = new Info('location_to_pdf.pdf');
+var_dump($pdf->toArray());
+```
+
+### Separate
 
 Convert a PDF file with multiple pages into multiple single page PDF's using a pattern with replacement of %d.
 
-## Text
+### Text
 
 Extract Text from a PDF file.
+
+```php
+$pdf = new Text('location_to_pdf.pdf');
+var_dump($pdf->convert());
+```
