@@ -1,6 +1,6 @@
 <?php
 
-namespace ThreeWS\PDFTools;
+namespace ThreeWS\PdfTools;
 
 class Separate
 {

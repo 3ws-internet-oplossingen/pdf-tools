@@ -1,6 +1,6 @@
 <?php
 
-namespace ThreeWS\PDFTools\Exceptions;
+namespace ThreeWS\PdfTools\Exceptions;
 
 use Exception;
 

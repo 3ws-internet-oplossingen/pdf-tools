@@ -1,12 +1,12 @@
 <?php
 
-namespace ThreeWS\PDFTools;
+namespace ThreeWS\PdfTools;
 
-use ThreeWS\PDFTools\Exceptions\CommandNotFoundException;
-use ThreeWS\PDFTools\Exceptions\OpenOutputException;
-use ThreeWS\PDFTools\Exceptions\OpenPDFException;
-use ThreeWS\PDFTools\Exceptions\OtherException;
-use ThreeWS\PDFTools\Exceptions\PDFPermissionException;
+use ThreeWS\PdfTools\Exceptions\CommandNotFoundException;
+use ThreeWS\PdfTools\Exceptions\OpenOutputException;
+use ThreeWS\PdfTools\Exceptions\OpenPDFException;
+use ThreeWS\PdfTools\Exceptions\OtherException;
+use ThreeWS\PdfTools\Exceptions\PDFPermissionException;
 
 class Info
 {
