@@ -37,7 +37,7 @@ var_dump($pdf->toArray());
 Convert a PDF file with multiple pages into multiple single page PDF's using a pattern with replacement of %d.
 
 ```php
-$pdf = new Separate('location_to_pdf.pdf', 'location_to_paged_%d_pdf.pdf');
+$pdf = new ThreeWS\PdfTools\Separate('location_to_pdf.pdf', 'location_to_paged_%d_pdf.pdf');
 ```
 
 ### Text
