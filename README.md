@@ -28,7 +28,7 @@ Gather all information about a PDF file like Page count.
 
 
 ```php
-$pdf = new Info('location_to_pdf.pdf');
+$pdf = new ThreeWS\PdfTools\Info('location_to_pdf.pdf');
 var_dump($pdf->toArray());
 ```
 
@@ -36,11 +36,15 @@ var_dump($pdf->toArray());
 
 Convert a PDF file with multiple pages into multiple single page PDF's using a pattern with replacement of %d.
 
+```php
+$pdf = new Separate('location_to_pdf.pdf', 'location_to_paged_%d_pdf.pdf');
+```
+
 ### Text
 
 Extract Text from a PDF file.
 
 ```php
-$pdf = new Text('location_to_pdf.pdf');
+$pdf = new ThreeWS\PdfTools\Text('location_to_pdf.pdf');
 var_dump($pdf->convert());
 ```
