@@ -7,6 +7,7 @@ This library depends on poppler utils which can be installed by the following.
 Debian / Ubuntu
 ```bash
 apt install poppler-utils
+apt install ghostscript
 ```
 
 OSX
@@ -30,6 +31,15 @@ Gather all information about a PDF file like Page count.
 ```php
 $pdf = new ThreeWS\PdfTools\Info('location_to_pdf.pdf');
 var_dump($pdf->toArray());
+```
+
+### Jpg
+
+Convert a PDF page to a JPG file.
+
+```php
+$pdf = new ThreeWS\PdfTools\Jpg('location_to_pdf.pdf', 60, 'y');
+var_dump($pdf->convert());
 ```
 
 ### Separate
